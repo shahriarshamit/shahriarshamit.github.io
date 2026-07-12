@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Case Studies | Khandaker's Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(20, 28, 46, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(125, 211, 252, 0.1);
+        }
+        .glass-card:hover {
+            border-color: rgba(125, 211, 252, 0.4);
+            box-shadow: 0 0 20px rgba(125, 211, 252, 0.1);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #0a0e1a;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #1a3a4e;
+            border-radius: 10px;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#0d1f2b",
+                        "surface-variant": "#1a2438",
+                        "on-primary": "#001f2e",
+                        "on-secondary": "#001f2e",
+                        "inverse-on-surface": "#0a0e1a",
+                        "inverse-primary": "#0a4c6e",
+                        "tertiary": "#c8a0f0",
+                        "surface-container-low": "#111828",
+                        "outline-variant": "#2a3a48",
+                        "on-error": "#1a0000",
+                        "surface": "#0f1524",
+                        "surface-tint": "#7dd3fc",
+                        "secondary-fixed-dim": "#88b4cc",
+                        "on-tertiary-fixed": "#1a002e",
+                        "on-primary-fixed-variant": "#004d73",
+                        "on-tertiary-fixed-variant": "#4d2a73",
+                        "primary-fixed-dim": "#7dd3fc",
+                        "secondary": "#88b4cc",
+                        "surface-container-lowest": "#0a0e1a",
+                        "on-primary-container": "#c8eaff",
+                        "on-surface-variant": "#a0b4c4",
+                        "tertiary-fixed-dim": "#c8a0f0",
+                        "surface-container": "#141c2e",
+                        "tertiary-container": "#3d2060",
+                        "inverse-surface": "#e0e8f0",
+                        "surface-container-high": "#1a2438",
+                        "primary": "#7dd3fc",
+                        "outline": "#4a6070",
+                        "on-tertiary-container": "#e8d0ff",
+                        "on-primary-fixed": "#001f2e",
+                        "surface-dim": "#0f1524",
+                        "on-secondary-fixed-variant": "#2a4a5e",
+                        "tertiary-fixed": "#e8d0ff",
+                        "on-background": "#e0e8f0",
+                        "on-secondary-container": "#c0d8e8",
+                        "on-error-container": "#ffb3b3",
+                        "error": "#ff6b6b",
+                        "error-container": "#3d1414",
+                        "secondary-fixed": "#c0d8e8",
+                        "background": "#0a0e1a",
+                        "primary-container": "#0e4d6e",
+                        "surface-bright": "#1a2438",
+                        "on-surface": "#e0e8f0",
+                        "primary-fixed": "#c8eaff",
+                        "on-tertiary": "#1a002e",
+                        "secondary-container": "#1a3a4e",
+                        "surface-container-highest": "#202c42"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "display": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary overflow-x-hidden">
+<!-- Header Section (Shared Component Navigation Bar) -->
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-[#101d23] dark group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[1280px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#213d4a] px-4 md:px-10 py-3 mb-8">
+<div class="flex items-center gap-4 text-white">
+<div class="size-4 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Khandaker's Portfolio</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-primary text-sm font-bold leading-normal" href="#">Projects</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Resume</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-primary text-[#101d23] text-sm font-bold leading-normal tracking-[0.015em] hover:brightness-110 transition-all">
+<span class="truncate">Hire Me</span>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<div class="relative overflow-hidden rounded-3xl mb-12 h-64 md:h-80 flex items-center px-8 md:px-16">
+<div class="absolute inset-0 z-0 opacity-40">
+<webgl-shader class="w-full h-full" src="{{DATA:ANIMATION:ANIMATION_1}}"></webgl-shader>
+</div>
+<div class="relative z-10 max-w-2xl">
+<h1 class="text-4xl md:text-6xl font-black text-white leading-tight mb-4 tracking-tight">Case Studies & <span class="text-primary">Success Stories</span></h1>
+<p class="text-secondary text-lg md:text-xl font-normal max-w-lg">A deep dive into high-impact full-stack solutions and automation projects delivered to top-tier clients on Upwork.</p>
+</div>
+</div>
+<!-- Statistics Bar -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+<div class="glass-card rounded-2xl p-6 flex flex-col items-center justify-center text-center">
+<span class="text-primary font-black text-3xl mb-1">100%</span>
+<span class="text-on-surface-variant text-xs uppercase tracking-widest">Job Success Score</span>
+</div>
+<div class="glass-card rounded-2xl p-6 flex flex-col items-center justify-center text-center">
+<span class="text-primary font-black text-3xl mb-1">500+</span>
+<span class="text-on-surface-variant text-xs uppercase tracking-widest">Hours Logged</span>
+</div>
+<div class="glass-card rounded-2xl p-6 flex flex-col items-center justify-center text-center">
+<span class="text-primary font-black text-3xl mb-1">5.0</span>
+<span class="text-on-surface-variant text-xs uppercase tracking-widest">Average Rating</span>
+</div>
+<div class="glass-card rounded-2xl p-6 flex flex-col items-center justify-center text-center">
+<span class="text-primary font-black text-3xl mb-1">Top</span>
+<span class="text-on-surface-variant text-xs uppercase tracking-widest">Rated Plus</span>
+</div>
+</div>
+<!-- Filter Tabs -->
+<div class="flex border-b border-outline-variant px-4 gap-8 mb-12 overflow-x-auto no-scrollbar">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-primary text-white pb-[13px] pt-4 whitespace-nowrap" href="#">
+<p class="text-white text-sm font-bold leading-normal tracking-[0.015em]">All Projects</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-on-surface-variant pb-[13px] pt-4 whitespace-nowrap hover:text-white" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Web Applications</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-on-surface-variant pb-[13px] pt-4 whitespace-nowrap hover:text-white" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Automation & Scripts</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-on-surface-variant pb-[13px] pt-4 whitespace-nowrap hover:text-white" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Financial Tools</p>
+</a>
+</div>
+<!-- Project Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-20">
+<!-- Project 1: JS Financial Calculator -->
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col transition-all duration-300 group">
+<div class="relative h-56 w-full overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest/80 to-transparent z-10"></div>
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A highly detailed 3D render of a clean, modern web interface showing complex financial charts and a calculator interface. The aesthetic is professional and high-tech, with glowing blue data lines against a deep navy background. Soft ambient lighting illuminates sleek UI elements like sliders and interactive input fields." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7PuaL7K5cHyCNZHAVS3DWImpmW9p5tqMZ-c6XkEvjIsUxQEFaH70kGypgJyHwuo13k1OTv2wfTduiPNDYPqtIvP1ORue9KNnv3CFpUF9TQdBOlVg4cZZ6NIOsYsYZwWPA8A78QInwsrBvYKljmf4j-N9R98VgTAt3VkPwG1wb2pfY9BKpecorbHBx-Eb3htwvsX2ymUJfBKVvz8dF4VMpXMweqK3ARQA5vXJXdYaeDsBjFfhfYso"/>
+<div class="absolute top-4 right-4 z-20 flex gap-2">
+<span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider backdrop-blur-md border border-primary/30">Web Tool</span>
+</div>
+</div>
+<div class="p-6 flex flex-1 flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors">JS Financial Calculator</h3>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold ml-1">5.0</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm mb-4 line-clamp-2">High-performance custom financial forecasting engine built with Vanilla JavaScript and CSS3.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-surface-container-high text-on-surface text-xs px-2 py-1 rounded border border-outline-variant">JavaScript</span>
+<span class="bg-surface-container-high text-on-surface text-xs px-2 py-1 rounded border border-outline-variant">CSS3</span>
+<span class="bg-surface-container-high text-on-surface text-xs px-2 py-1 rounded border border-outline-variant">Algorithm Design</span>
+</div>
+<div class="mt-auto space-y-3">
+<div class="flex justify-between text-xs border-b border-outline-variant pb-2">
+<span class="text-on-surface-variant">Time Invested</span>
+<span class="text-white font-medium">52 Hours</span>
+</div>
+<div class="flex justify-between text-xs border-b border-outline-variant pb-2">
+<span class="text-on-surface-variant">Total Value</span>
+<span class="text-white font-medium">$521.67</span>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-lg">verified</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">100% Accuracy Metric</span>
+</div>
+<button class="text-primary flex items-center gap-1 text-sm font-bold hover:underline">
+                                            View Details <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 2: Batch PDF/XML Generator -->
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col transition-all duration-300 group">
+<div class="relative h-56 w-full overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest/80 to-transparent z-10"></div>
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A stylized digital visualization of massive data processing, featuring glowing white document icons morphing into code strings and XML nodes. The background is a dark, atmospheric blue with thin, ice-blue circuit lines. Lighting is focused on the central data flow, creating a sense of rapid automation and efficiency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiTMsSndpn-du-Qr0xU1AhcCU-G0VtWZmPKCwBpxheNoJ_G12qgYzrv8DrMAK3xDrHVu9atd8cJuzgguv0-IISvWmfOJjEEyfnTN5F3lNMeuqestbBpFbtTfUCto_kChBjhofdlTOBhkBHTaYDPcvV5hSvA3U1_Hkp6CwnNprPIFKt_585B657Zh9wVI2Xs2Aw2_CpJkqsopnnot12ViX_CNLeV2Q7pnzYqQNFdiJSmkAI2Gxxk0I"/>
+<div class="absolute top-4 right-4 z-20 flex gap-2">
+<span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider backdrop-blur-md border border-primary/30">Automation</span>
+</div>
+</div>
+<div class="p-6 flex flex-1 flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors">PDF & XML Generator</h3>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold ml-1">5.0</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm mb-4 line-clamp-2">Scalable batch processing engine for generating high-volume compliance documents.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-surface-container-high text-on-surface text-xs px-2 py-1 rounded border border-outline-variant">PHP</span>
+<span class="bg-surface-container-high text-on-surface text-xs px-2 py-1 rounded border border-outline-variant">XML/XSLT</span>
+<span class="bg-surface-container-high text-on-surface text-xs px-2 py-1 rounded border border-outline-variant">DomPDF</span>
+</div>
+<div class="mt-auto space-y-3">
+<div class="flex justify-between text-xs border-b border-outline-variant pb-2">
+<span class="text-on-surface-variant">Client Project</span>
+<span class="text-white font-medium">Enterprise Suite</span>
+</div>
+<div class="flex justify-between text-xs border-b border-outline-variant pb-2">
+<span class="text-on-surface-variant">Contract Value</span>
+<span class="text-white font-medium">$450.00</span>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-lg">bolt</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">90% Faster Delivery</span>
+</div>
+<button class="text-primary flex items-center gap-1 text-sm font-bold hover:underline">
+                                            View Details <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 3: GoProFootball Grading Plugin -->
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col transition-all duration-300 group">
+<div class="relative h-56 w-full overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest/80 to-transparent z-10"></div>
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A dynamic sport-tech visualization showing a football stadium overlayed with digital analytics data, heatmaps, and player grading metrics. The color scheme is a sophisticated mix of deep sports-turf greens and glowing ice-blue data overlays. Cinematic lighting with anamorphic lens flares enhances the high-performance feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYUGp3yUBAGlMJ4xBpM01tHFg1iz1di6_z96Sfu8_Xvx_yiG8Ce416q0CMwd2ajLaI1hr55Y54ltR0GSlZ651S7mzY6Wkfwp0hUNpSXW5B5gGmNL_0kvOMuTm7HmG0vlO3kc31waZg0kfDvvujdKOu7eD0PbycH6toLMYCcDIlcwjsvbTrCgSeoGU850qKNbHuFDNf9J9pcYx0pSl2v9oS9GBHIcf6AO2creg5zrpPrTefHlD6ESk"/>
+<div class="absolute top-4 right-4 z-20 flex gap-2">
+<span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider backdrop-blur-md border border-primary/30">Custom Plugin</span>
+</div>
+</div>
+<div class="p-6 flex flex-1 flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors">GoProFootball Plugin</h3>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold ml-1">5.0</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm mb-4 line-clamp-2">Custom football grading and metrics visualization plugin for sports analytics platforms.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-surface-container-high text-on-surface text-xs px-2 py-1 rounded border border-outline-variant">WordPress</span>
+<span class="bg-surface-container-high text-on-surface text-xs px-2 py-1 rounded border border-outline-variant">PHP</span>
+<span class="bg-surface-container-high text-on-surface text-xs px-2 py-1 rounded border border-outline-variant">Chart.js</span>
+</div>
+<div class="mt-auto space-y-3">
+<div class="flex justify-between text-xs border-b border-outline-variant pb-2">
+<span class="text-on-surface-variant">Focus</span>
+<span class="text-white font-medium">Sports Analytics</span>
+</div>
+<div class="flex justify-between text-xs border-b border-outline-variant pb-2">
+<span class="text-on-surface-variant">Complexity</span>
+<span class="text-white font-medium">High</span>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-lg">monitoring</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Real-time Analysis</span>
+</div>
+<button class="text-primary flex items-center gap-1 text-sm font-bold hover:underline">
+                                            View Details <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 4: CRM Customization -->
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col transition-all duration-300 group">
+<div class="relative h-56 w-full overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest/80 to-transparent z-10"></div>
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A clean, minimalist 3D rendering of a CRM dashboard with glowing user interface components and interconnected nodes representing client data. The style is modern corporate, using a palette of steel blues and crisp whites. Soft shadows and a depth-of-field effect emphasize the core management tools." src="https://lh3.googleusercontent.com/aida-public/AB6AXuApifAPZkgv0uPCJ86cmyep6xzlYjKeFR1DFbJJg5ITyVUX36tfzzERk05ZBv41s_sP8Yt-Ufjrra3WBMCOxCQMrOM5DfraBLl6xEhm3ro_rfM8GvoowThF3UalpkaEMEkhz0X8NKqkvfwSP1W885h4sHrrOfeVSpB8BUy4bO_YBPIUgwpTLE3P81p1wtpYYhALCp5Nflp5VQ5VwuuHfWNNRxUqenA-xfjkGrFpLdx6aHy4BG8msLc"/>
+<div class="absolute top-4 right-4 z-20 flex gap-2">
+<span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider backdrop-blur-md border border-primary/30">Open Source</span>
+</div>
+</div>
+<div class="p-6 flex flex-1 flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors">CRM Customization</h3>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold ml-1">5.0</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm mb-4 line-clamp-2">Tailoring open-source CRM architecture to fit specific business logistics and sales flows.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-surface-container-high text-on-surface text-xs px-2 py-1 rounded border border-outline-variant">PHP</span>
+<span class="bg-surface-container-high text-on-surface text-xs px-2 py-1 rounded border border-outline-variant">MySQL</span>
+<span class="bg-surface-container-high text-on-surface text-xs px-2 py-1 rounded border border-outline-variant">SuiteCRM</span>
+</div>
+<div class="mt-auto space-y-3">
+<div class="flex justify-between text-xs border-b border-outline-variant pb-2">
+<span class="text-on-surface-variant">Contract Value</span>
+<span class="text-white font-medium">$160.00</span>
+</div>
+<div class="flex justify-between text-xs border-b border-outline-variant pb-2">
+<span class="text-on-surface-variant">Project Rating</span>
+<span class="text-white font-medium">5.0 Stars</span>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-lg">hub</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Seamless Integration</span>
+</div>
+<button class="text-primary flex items-center gap-1 text-sm font-bold hover:underline">
+                                            View Details <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 5: Real Estate Search -->
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col transition-all duration-300 group">
+<div class="relative h-56 w-full overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest/80 to-transparent z-10"></div>
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A modern architectural visualization of luxury homes integrated with a digital map interface. The image features glowing location pins and sleek property card overlays. The lighting is golden hour, casting long, warm shadows across the cityscape, balanced by cool blue digital UI elements that feel high-end and premium." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhBHXSdrwhG3Gi8NXA9K7RcX9Ptz9YyiJsXMYPlKKpJQUHPjr0LvLT5JBXD_wrz5umRZePsXu_z235Qi_pJuZ1XcL3HXJEuOJIAKNNHp2JMrQdAsk-fbIqFepuxVlDxYhB2h-p9rBvH5j-k9NkV7PCr_u6dwLhDaHsONlbZ-NkIYRcmYwMKEC4OgYCaMEx6yJ7L2pLV3OoWDWt9vjk0CFaNFJYGlL-5jrRcu-r0_i1pj7JwbuqQIc"/>
+<div class="absolute top-4 right-4 z-20 flex gap-2">
+<span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider backdrop-blur-md border border-primary/30">Real Estate</span>
+</div>
+</div>
+<div class="p-6 flex flex-1 flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors">Property Search Site</h3>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold ml-1">5.0</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm mb-4 line-clamp-2">Comprehensive property search engine with integrated mortgage and tax calculators.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-surface-container-high text-on-surface text-xs px-2 py-1 rounded border border-outline-variant">React</span>
+<span class="bg-surface-container-high text-on-surface text-xs px-2 py-1 rounded border border-outline-variant">Google Maps API</span>
+<span class="bg-surface-container-high text-on-surface text-xs px-2 py-1 rounded border border-outline-variant">Node.js</span>
+</div>
+<div class="mt-auto space-y-3">
+<div class="flex justify-between text-xs border-b border-outline-variant pb-2">
+<span class="text-on-surface-variant">Complexity</span>
+<span class="text-white font-medium">Enterprise Grade</span>
+</div>
+<div class="flex justify-between text-xs border-b border-outline-variant pb-2">
+<span class="text-on-surface-variant">Features</span>
+<span class="text-white font-medium">Calc + Search</span>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-lg">house</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">UX-First Mapping</span>
+</div>
+<button class="text-primary flex items-center gap-1 text-sm font-bold hover:underline">
+                                            View Details <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Technical Stack CTA Card -->
+<div class="bg-primary/5 rounded-2xl border-2 border-dashed border-primary/20 flex flex-col items-center justify-center p-8 text-center group">
+<div class="size-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">add_circle</span>
+</div>
+<h3 class="text-white text-xl font-bold mb-2">Have a Custom Requirement?</h3>
+<p class="text-on-surface-variant text-sm mb-6">Specializing in niche technical solutions from Fintech to Sports Analytics.</p>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-xl font-bold text-sm hover:brightness-110 transition-all">
+                                Request Quote
+                            </button>
+</div>
+</div>
+<!-- Technical Imagery Section -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20 items-center">
+<div class="space-y-6">
+<h2 class="text-3xl font-black text-white">The Engineering <span class="text-primary">Behind the Work</span></h2>
+<p class="text-on-surface-variant leading-relaxed">
+                                Every project is approached with a commitment to clean code, performance optimization, and client success. Using a modern stack of PHP, JavaScript, and MySQL, I build systems that are not only functional but scalable and secure.
+                            </p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<div>
+<p class="text-white font-bold text-sm">Performance Focused</p>
+<p class="text-on-surface-variant text-xs">99th percentile Core Web Vitals for all frontend deliverables.</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<div>
+<p class="text-white font-bold text-sm">Security Hardened</p>
+<p class="text-on-surface-variant text-xs">Enterprise-grade sanitization and SQL injection prevention standard.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+<div class="relative glass-card rounded-2xl overflow-hidden aspect-video">
+<img class="w-full h-full object-cover" data-alt="A macro close-up of a high-resolution monitor displaying sophisticated lines of code in a dark IDE. The code is vibrant with syntax highlighting in neon blues, greens, and purples. In the background, a blurred reflection of a workspace with a mechanical keyboard and ergonomic mouse is visible, lit by soft, cold blue atmospheric lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5ACA52jz2do5GwL2ACzzFTaNBjQxOKaQSPBhXKODq9jlwVpNnNi018T9brpN7BQAuSbOPZ8_gccVlzYCtuWDU67Nj-3Rzp8G9zv12K_u6TKG-alJKXVX_fFLEt1j5rOVY_t3B4keWYOgID0VA0Q-RFX9Xftf-XiP2393Ou5Ut2Kzo-E0q_lwFXb3qoT6-rL5q2GCPIMq15W3FDpNB3BGdhCPuSXCGdH4Cuk4TE9n6RKPv1DGRDR8"/>
+</div>
+</div>
+</div>
+<!-- Footer CTA -->
+<footer class="text-center py-20 border-t border-outline-variant">
+<h2 class="text-4xl font-black text-white mb-6">Ready to start your next project?</h2>
+<div class="flex flex-wrap justify-center gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-2xl font-black text-lg hover:brightness-110 transition-all flex items-center gap-2">
+<span class="material-symbols-outlined">mail</span> Hire Me on Upwork
+                            </button>
+<button class="bg-surface-container-high text-white border border-outline-variant px-8 py-4 rounded-2xl font-black text-lg hover:bg-surface-container-highest transition-all">
+                                Download Portfolio
+                            </button>
+</div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<!-- Micro-interaction Scripts -->
+<script>
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
+</body></html>

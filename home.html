@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700;800&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">try {
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        "colors": {
+                            "on-surface": "#d4e4fa",
+                            "secondary": "#4edea3",
+                            "tertiary": "#adc6ff",
+                            "surface-container-high": "#1c2b3c",
+                            "error": "#ffb4ab",
+                            "outline-variant": "#45464d",
+                            "primary-fixed-dim": "#bec6e0",
+                            "inverse-on-surface": "#233143",
+                            "on-surface-variant": "#c6c6cd",
+                            "on-error-container": "#ffdad6",
+                            "on-primary": "#283044",
+                            "electric-blue": "#60A5FA",
+                            "on-background": "#d4e4fa",
+                            "tertiary-container": "#00163a",
+                            "error-container": "#93000a",
+                            "on-primary-container": "#798098",
+                            "on-tertiary": "#002e6a",
+                            "on-primary-fixed": "#131b2e",
+                            "primary": "#bec6e0",
+                            "background": "#051424",
+                            "surface-container-low": "#0d1c2d",
+                            "on-primary-fixed-variant": "#3f465c",
+                            "on-tertiary-container": "#357df1",
+                            "surface-tint": "#bec6e0",
+                            "surface-border": "#1E293B",
+                            "surface-dim": "#051424",
+                            "surface-container": "#122131",
+                            "tertiary-fixed": "#d8e2ff",
+                            "on-secondary-fixed-variant": "#005236",
+                            "on-error": "#690005",
+                            "secondary-fixed": "#6ffbbe",
+                            "secondary-fixed-dim": "#4edea3",
+                            "on-secondary": "#003824",
+                            "on-secondary-fixed": "#002113",
+                            "surface-container-lowest": "#010f1f",
+                            "secondary-container": "#00a572",
+                            "primary-container": "#0f172a",
+                            "surface-bright": "#2c3a4c",
+                            "text-vibrant": "#F8FAFC",
+                            "primary-fixed": "#dae2fd",
+                            "success-emerald": "#10B981",
+                            "surface": "#051424",
+                            "outline": "#909097",
+                            "tertiary-fixed-dim": "#adc6ff",
+                            "surface-container-highest": "#273647",
+                            "on-tertiary-fixed": "#001a42",
+                            "on-tertiary-fixed-variant": "#004395",
+                            "terminal-bg": "#020617",
+                            "on-secondary-container": "#00311f",
+                            "inverse-primary": "#565e74",
+                            "surface-variant": "#273647",
+                            "inverse-surface": "#d4e4fa"
+                        },
+                        "borderRadius": {
+                            "DEFAULT": "0.125rem",
+                            "lg": "0.25rem",
+                            "xl": "0.5rem",
+                            "full": "0.75rem"
+                        },
+                        "spacing": {
+                            "container-max": "1200px",
+                            "gutter": "24px",
+                            "stack-gap": "16px",
+                            "base": "8px",
+                            "section-padding": "80px"
+                        },
+                        "fontFamily": {
+                            "headline-lg": ["Hanken Grotesk"],
+                            "body-lg": ["Inter"],
+                            "body-md": ["Inter"],
+                            "headline-lg-mobile": ["Hanken Grotesk"],
+                            "label-code": ["JetBrains Mono"],
+                            "headline-md": ["Hanken Grotesk"],
+                            "stats-number": ["Hanken Grotesk"]
+                        },
+                        "fontSize": {
+                            "headline-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                            "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                            "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                            "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "800" }],
+                            "label-code": ["14px", { "lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                            "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                            "stats-number": ["40px", { "lineHeight": "1", "fontWeight": "700" }]
+                        }
+                    },
+                },
+            }
+        } catch (_e) { }</script>
+</head>
+
+<body class="bg-background text-on-surface selection:bg-electric-blue/30 selection:text-electric-blue">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-surface-border h-20">
+        <div class="max-w-container-max mx-auto px-gutter flex justify-between items-center h-full">
+            <div class="font-label-code text-body-lg font-bold tracking-tighter text-on-surface">
+                KHANDAKER.DEV
+            </div>
+            <div class="hidden md:flex gap-8 items-center">
+                <a class="text-on-surface-variant font-medium hover:text-electric-blue transition-colors duration-300 font-body-md text-body-md"
+                    href="#expertise">Expertise</a>
+                <a class="text-on-surface-variant font-medium hover:text-electric-blue transition-colors duration-300 font-body-md text-body-md"
+                    href="#portfolio">Portfolio</a>
+                <a class="text-on-surface-variant font-medium hover:text-electric-blue transition-colors duration-300 font-body-md text-body-md"
+                    href="#career">Career</a>
+                <a class="text-on-surface-variant font-medium hover:text-electric-blue transition-colors duration-300 font-body-md text-body-md"
+                    href="#education">Education</a>
+            </div>
+            <button
+                class="bg-primary-container border border-electric-blue text-electric-blue px-6 py-2 font-label-code text-label-code scale-95 active:opacity-80 transition-all hover:bg-electric-blue/10">
+                Contact
+            </button>
+        </div>
+    </nav>
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative min-h-[819px] flex items-center overflow-hidden py-section-padding">
+            <div class="max-w-container-max mx-auto px-gutter relative z-10 grid md:grid-cols-12 gap-stack-gap">
+                <div class="md:col-span-8">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high border border-surface-border mb-6">
+                        <span class="w-2 h-2 rounded-full bg-success-emerald animate-pulse"></span>
+                        <span class="font-label-code text-label-code text-secondary">AVAILABLE FOR HIGH-VALUE PROJECTS</span>
+                    </div>
+                    <h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-text-vibrant mb-6">
+                        Senior Full Stack Web Developer &amp; <br class="hidden md:block">
+                        <span class="text-electric-blue">Software Engineer</span>
+                    </h1>
+                    <p class="font-headline-md text-headline-md text-on-surface-variant mb-8 max-w-2xl">
+                        Building Scalable, Efficient, and Future-Proof Web Solutions.
+                    </p>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl">
+                        With over 14.5 years of professional engineering experience, I specialize in architecting
+                        high-performance systems and leading cross-functional teams to deliver exceptional digital
+                        experiences.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <button class="bg-electric-blue text-on-primary px-8 py-4 font-label-code text-label-code font-bold hover:brightness-110 transition-all">
+                            VIEW ARCHITECTURE PORTFOLIO
+                        </button>
+                        <button class="border border-surface-border text-on-surface px-8 py-4 font-label-code text-label-code font-bold hover:bg-surface-container transition-all">
+                            TECHNICAL STACK
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Upwork Success Banner -->
+        <section class="bg-surface-container-lowest py-12 border-y border-surface-border">
+            <div class="max-w-container-max mx-auto px-gutter">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                    <div class="flex items-center gap-4">
+                        <div class="p-4 bg-secondary/10 border border-secondary/20 rounded-full">
+                            <span class="material-symbols-outlined text-secondary text-4xl"
+                                style="font-variation-settings: 'FILL' 1;">verified</span>
+                        </div>
+                        <div>
+                            <h3 class="font-label-code text-label-code text-secondary font-bold">UPWORK TOP-RATED</h3>
+                            <p class="font-headline-md text-headline-md text-on-surface">Industry Excellence</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-12 w-full md:w-auto">
+                        <div class="text-center md:text-left">
+                            <span class="font-stats-number text-stats-number text-electric-blue block">$20k+</span>
+                            <span class="font-label-code text-label-code text-on-surface-variant">Earnings</span>
+                        </div>
+                        <div class="text-center md:text-left">
+                            <span class="font-stats-number text-stats-number text-electric-blue block">175</span>
+                            <span class="font-label-code text-label-code text-on-surface-variant">Jobs Completed</span>
+                        </div>
+                        <div class="text-center md:text-left col-span-2 md:col-span-1">
+                            <span class="font-stats-number text-stats-number text-electric-blue block">3,787+</span>
+                            <span class="font-label-code text-label-code text-on-surface-variant">Hours Logged</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Me Section -->
+        <section class="py-section-padding" id="about">
+            <div class="max-w-container-max mx-auto px-gutter grid md:grid-cols-2 gap-16 items-center">
+                <div class="relative group">
+                    <div
+                        class="absolute -inset-4 border border-electric-blue/30 translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform">
+                    </div>
+                    <div
+                        class="relative bg-surface-container border border-surface-border aspect-square overflow-hidden">
+                        <img class="w-full h-full object-cover"
+                            alt="A professional studio portrait of a senior software engineer"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiYpLDUNOwC9euDkuu9z6lgp9B8ar1W0pAuurWjXLKtZ5MvyKc3O3-fZj2rN1ChJLvwBuCmxpCH34ywkKQ0eSVzrLjzl7FU59yFvC7AECeTo37nF6It2yIIWSfKQtOzagjHYPuz28AezSdfVAyxP4qVbveoLgzL7BJpUc2BMomLCkUC_EKqPl3VhOjeafOcFqJH61-DcBmu_X0_6ibq89YyxOCCBMwFC_PSgZsk1rLgzP1EQ11_F4">
+                    </div>
+                </div>
+                <div>
+                    <h2 class="font-label-code text-label-code text-electric-blue mb-4">THE ENGINEER'S JOURNEY</h2>
+                    <h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-6">360°
+                        Perspective on Modern Engineering</h3>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                        With over 14.5 years of professional experience, I have transitioned from a Trainee Web
+                        Programmer to a Senior Developer and IT Infrastructure specialist.
+                    </p>
+                    <p class="font-body-md text-body-md text-on-surface-variant/80 mb-8 leading-relaxed">
+                        My approach is rooted in clean code and scalability. I bridge the gap between complex backend
+                        logic and intuitive frontend experiences, delivering global-standard digital products across
+                        various stacks including PHP (Laravel), WordPress, and modern JavaScript.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-4 border border-surface-border bg-surface-container-low">
+                            <h4 class="font-label-code text-label-code text-secondary mb-1">STRATEGY</h4>
+                            <p class="font-body-md text-body-md text-on-surface">Architectural Design</p>
+                        </div>
+                        <div class="p-4 border border-surface-border bg-surface-container-low">
+                            <h4 class="font-label-code text-label-code text-secondary mb-1">EXECUTION</h4>
+                            <p class="font-body-md text-body-md text-on-surface">Agile Mastery</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Expertise Bento Grid -->
+        <section class="py-section-padding bg-surface-container-lowest" id="expertise">
+            <div class="max-w-container-max mx-auto px-gutter">
+                <div class="text-center mb-16">
+                    <h2 class="font-label-code text-label-code text-electric-blue mb-4 uppercase tracking-widest">
+                        Technical Domain</h2>
+                    <h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Core
+                        Competencies</h3>
+                </div>
+                <div class="grid md:grid-cols-3 gap-gutter">
+                    <!-- Backend Mastery -->
+                    <div
+                        class="bg-terminal-bg border border-surface-border p-8 relative group hover:border-electric-blue transition-colors">
+                        <div class="terminal-header mb-8 opacity-50"></div>
+                        <span class="material-symbols-outlined text-electric-blue text-4xl mb-6">database</span>
+                        <h4 class="font-headline-md text-headline-md text-text-vibrant mb-4">Backend Mastery</h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-6">Architecting robust
+                            server-side ecosystems with a focus on scalability and security.</p>
+                        <ul class="space-y-3 font-label-code text-label-code text-on-surface-variant">
+                            <li class="flex items-center gap-2"><span class="text-secondary">01</span> PHP (Laravel,
+                                CodeIgniter, Phalcon)</li>
+                            <li class="flex items-center gap-2"><span class="text-secondary">02</span> Node.js
+                                (Express.js) &amp; Python</li>
+                            <li class="flex items-center gap-2"><span class="text-secondary">03</span> REST &amp;
+                                GraphQL APIs</li>
+                            <li class="flex items-center gap-2"><span class="text-secondary">04</span> Advanced MySQL
+                                Architecture</li>
+                        </ul>
+                    </div>
+                    <!-- Frontend & UI/UX -->
+                    <div
+                        class="bg-terminal-bg border border-surface-border p-8 relative group hover:border-electric-blue transition-colors">
+                        <div class="terminal-header mb-8 opacity-50"></div>
+                        <span class="material-symbols-outlined text-electric-blue text-4xl mb-6">web_asset</span>
+                        <h4 class="font-headline-md text-headline-md text-text-vibrant mb-4">Frontend &amp; UI/UX</h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-6">Crafting immersive user
+                            interfaces that blend aesthetic elegance with technical precision.</p>
+                        <ul class="space-y-3 font-label-code text-label-code text-on-surface-variant">
+                            <li class="flex items-center gap-2"><span class="text-secondary">01</span> React.js &amp;
+                                jQuery Expert</li>
+                            <li class="flex items-center gap-2"><span class="text-secondary">02</span> Tailwind CSS
+                                Systems</li>
+                            <li class="flex items-center gap-2"><span class="text-secondary">03</span> State Management
+                                (Redux/Zustand)</li>
+                            <li class="flex items-center gap-2"><span class="text-secondary">04</span> Responsive
+                                Component Libraries</li>
+                        </ul>
+                    </div>
+                    <!-- Infrastructure-->
+                    <div
+                        class="bg-terminal-bg border border-surface-border p-8 relative group hover:border-electric-blue transition-colors">
+                        <div class="terminal-header mb-8 opacity-50"></div>
+                        <span class="material-symbols-outlined text-electric-blue text-4xl mb-6">terminal</span>
+                        <h4 class="font-headline-md text-headline-md text-text-vibrant mb-4">Infrastructure &amp; Ops
+                        </h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-6">Ensuring high uptime through
+                            IT infrastructure optimization and network security.</p>
+                        <ul class="space-y-3 font-label-code text-label-code text-on-surface-variant">
+                            <li class="flex items-center gap-2"><span class="text-secondary">01</span> AWS / Azure
+                                Deployment</li>
+                            <li class="flex items-center gap-2"><span class="text-secondary">02</span> Git, GitHub &amp;
+                                CI/CD</li>
+                            <li class="flex items-center gap-2"><span class="text-secondary">03</span> Complex Web
+                                Scraping (.NET)</li>
+                            <li class="flex items-center gap-2"><span class="text-secondary">04</span> Network &amp;
+                                CCTV Management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Section -->
+        <section class="py-section-padding" id="portfolio">
+            <div class="max-w-container-max mx-auto px-gutter">
+                <div class="text-center mb-16">
+                    <h2 class="font-label-code text-label-code text-electric-blue mb-4 uppercase tracking-widest">
+                        Featured Projects</h2>
+                    <h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Technical
+                        Portfolio</h3>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div
+                        class="group bg-surface-container border border-surface-border hover:border-electric-blue transition-all duration-300 p-6 flex flex-col h-full">
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="material-symbols-outlined text-electric-blue text-3xl">calculate</span>
+                            <div class="flex items-center gap-1 text-secondary font-label-code text-label-code">
+                                <span class="material-symbols-outlined text-sm">star</span> 5.0
+                            </div>
+                        </div>
+                        <h4 class="font-headline-md text-headline-md text-text-vibrant mb-3">Financial Calculator</h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">JavaScript (Vanilla)
+                            development for complex assessments and financial calculations. 52 hours of dedicated
+                            engineering.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-2 py-1 bg-surface-container-high border border-surface-border font-label-code text-xs text-on-surface-variant">JavaScript</span>
+                            <span
+                                class="px-2 py-1 bg-surface-container-high border border-surface-border font-label-code text-xs text-on-surface-variant">Vanilla
+                                JS</span>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div
+                        class="group bg-surface-container border border-surface-border hover:border-electric-blue transition-all duration-300 p-6 flex flex-col h-full">
+                        <div class="flex justify-between items-start mb-6">
+                            <span
+                                class="material-symbols-outlined text-electric-blue text-3xl">settings_input_component</span>
+                            <div class="flex items-center gap-1 text-secondary font-label-code text-label-code">
+                                <span class="material-symbols-outlined text-sm">star</span> 5.0
+                            </div>
+                        </div>
+                        <h4 class="font-headline-md text-headline-md text-text-vibrant mb-3">Open Source CRM</h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Installation and
+                            custom core modifications to an open-source CRM platform based on client specific
+                            requirements.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-2 py-1 bg-surface-container-high border border-surface-border font-label-code text-xs text-on-surface-variant">PHP</span>
+                            <span
+                                class="px-2 py-1 bg-surface-container-high border border-surface-border font-label-code text-xs text-on-surface-variant">CRM</span>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div
+                        class="group bg-surface-container border border-surface-border hover:border-electric-blue transition-all duration-300 p-6 flex flex-col h-full">
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="material-symbols-outlined text-electric-blue text-3xl">terminal</span>
+                        </div>
+                        <h4 class="font-headline-md text-headline-md text-text-vibrant mb-3">Batch PDF &amp; XML Gen
+                        </h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Automation tool for
+                            generating bulk PDF and XML files from CSV data sources for enterprise processing.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-2 py-1 bg-surface-container-high border border-surface-border font-label-code text-xs text-on-surface-variant">Automation</span>
+                            <span
+                                class="px-2 py-1 bg-surface-container-high border border-surface-border font-label-code text-xs text-on-surface-variant">CSV</span>
+                        </div>
+                    </div>
+                    <!-- Project 4 -->
+                    <div
+                        class="group bg-surface-container border border-surface-border hover:border-electric-blue transition-all duration-300 p-6 flex flex-col h-full">
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="material-symbols-outlined text-electric-blue text-3xl">layers</span>
+                        </div>
+                        <h4 class="font-headline-md text-headline-md text-text-vibrant mb-3">Elementor Landing Page</h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">High-fidelity
+                            conversion of PSD design to responsive Elementor WordPress landing page.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-2 py-1 bg-surface-container-high border border-surface-border font-label-code text-xs text-on-surface-variant">PSD
+                                to WordPress</span>
+                            <span
+                                class="px-2 py-1 bg-surface-container-high border border-surface-border font-label-code text-xs text-on-surface-variant">Elementor</span>
+                        </div>
+                    </div>
+                    <!-- Project 5 -->
+                    <div
+                        class="group bg-surface-container border border-surface-border hover:border-electric-blue transition-all duration-300 p-6 flex flex-col h-full">
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="material-symbols-outlined text-electric-blue text-3xl">real_estate_agent</span>
+                        </div>
+                        <h4 class="font-headline-md text-headline-md text-text-vibrant mb-3">Real Estate Search</h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Property search
+                            platform integrated with custom financial calculator for mortgage estimates.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-2 py-1 bg-surface-container-high border border-surface-border font-label-code text-xs text-on-surface-variant">Real
+                                Estate</span>
+                            <span
+                                class="px-2 py-1 bg-surface-container-high border border-surface-border font-label-code text-xs text-on-surface-variant">Search
+                                API</span>
+                        </div>
+                    </div>
+                    <!-- Project-->
+                    <div
+                        class="group bg-surface-container border border-surface-border hover:border-electric-blue transition-all duration-300 p-6 flex flex-col h-full">
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="material-symbols-outlined text-electric-blue text-3xl">sports_soccer</span>
+                        </div>
+                        <h4 class="font-headline-md text-headline-md text-text-vibrant mb-3">GoProFootball</h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Custom WordPress
+                            development including a proprietary Football Grading Plugin for athlete evaluation.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-2 py-1 bg-surface-container-high border border-surface-border font-label-code text-xs text-on-surface-variant">WordPress</span>
+                            <span
+                                class="px-2 py-1 bg-surface-container-high border border-surface-border font-label-code text-xs text-on-surface-variant">Plugin
+                                Dev</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Career Timeline -->
+        <section class="py-section-padding bg-surface-container-lowest" id="career">
+            <div class="max-w-container-max mx-auto px-gutter">
+                <h2
+                    class="font-label-code text-label-code text-electric-blue mb-12 uppercase tracking-widest text-center">
+                    Professional History</h2>
+                <div class="space-y-12">
+                    <!-- Role 1 -->
+                    <div class="grid md:grid-cols-4 gap-8 group">
+                        <div class="md:col-span-1">
+                            <span class="font-label-code text-label-code text-secondary">2021 — PRESENT</span>
+                            <h4 class="font-headline-md text-headline-md text-on-surface mt-2">SEOPAGE1</h4>
+                        </div>
+                        <div
+                            class="md:col-span-3 border-l-2 border-surface-border pl-8 group-hover:border-electric-blue transition-colors">
+                            <h5 class="font-headline-md text-headline-md text-text-vibrant mb-4">Senior WordPress
+                                Developer</h5>
+                            <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+                                Leading the architectural evolution of internal SEO platforms and high-fidelity
+                                design-to-web conversions. Specializing in Figma/Webflow/WordPress workflows and
+                                optimizing distributed systems for high-volume data processing. Mentoring junior
+                                developers and establishing engineering standards.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Role 2 -->
+                    <div class="grid md:grid-cols-4 gap-8 group">
+                        <div class="md:col-span-1">
+                            <span class="font-label-code text-label-code text-secondary">NOV 2023 — FEB 2024</span>
+                            <h4 class="font-headline-md text-headline-md text-on-surface mt-2">Affpilot AI</h4>
+                        </div>
+                        <div
+                            class="md:col-span-3 border-l-2 border-surface-border pl-8 group-hover:border-electric-blue transition-colors">
+                            <h5 class="font-headline-md text-headline-md text-text-vibrant mb-4">WordPress Plugin
+                                Developer</h5>
+                            <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+                                Designing and developing employee management systems and custom WordPress plugins.
+                                Integrated AI workflows and automated affiliate marketing dashboard features using
+                                modern PHP and WordPress frameworks.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Role 3 -->
+                    <div class="grid md:grid-cols-4 gap-8 group">
+                        <div class="md:col-span-1">
+                            <span class="font-label-code text-label-code text-secondary">2013 — 2017</span>
+                            <h4 class="font-headline-md text-headline-md text-on-surface mt-2">Infobase ICT</h4>
+                        </div>
+                        <div
+                            class="md:col-span-3 border-l-2 border-surface-border pl-8 group-hover:border-electric-blue transition-colors">
+                            <h5 class="font-headline-md text-headline-md text-text-vibrant mb-4">Web Developer</h5>
+                            <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+                                Full-stack development for diverse client projects across E-commerce, Fintech, and SaaS
+                                sectors. Delivered over 50 enterprise-grade applications focusing on robust backend
+                                architecture.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Education & Certifications -->
+        <section class="py-section-padding" id="education">
+            <div class="max-w-container-max mx-auto px-gutter">
+                <div class="grid md:grid-cols-2 gap-16">
+                    <div>
+                        <h2 class="font-label-code text-label-code text-electric-blue mb-8 uppercase tracking-widest">
+                            Academic Background</h2>
+                        <div
+                            class="p-8 border border-surface-border bg-surface-container-high hover:border-secondary transition-all">
+                            <h3 class="font-headline-md text-headline-md text-on-surface mb-2">Diploma in Engineering
+                                (CSE)</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant mb-4">Ahsanullah University of
+                                Science and Technology (AUST)</p>
+                            <div class="flex items-center gap-2 text-secondary font-label-code text-label-code">
+                                <span class="material-symbols-outlined">school</span>
+                                ACADEMIC EXCELLENCE
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="font-label-code text-label-code text-electric-blue mb-8 uppercase tracking-widest">
+                            Professional Certification</h2>
+                        <div
+                            class="p-8 border border-surface-border bg-surface-container-high hover:border-secondary transition-all">
+                            <h3 class="font-headline-md text-headline-md text-on-surface mb-2">NSDA Level 3
+                                Certification</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant mb-4">Web Design &amp;
+                                Development for Freelancing</p>
+                            <div class="flex items-center gap-2 text-secondary font-label-code text-label-code">
+                                <span class="material-symbols-outlined">verified</span>
+                                NATIONALLY RECOGNIZED EXPERT
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full py-section-padding border-t border-surface-border bg-surface-container-lowest">
+        <div
+            class="max-w-container-max mx-auto px-gutter flex flex-col md:flex-row justify-between items-center gap-stack-gap">
+            <div class="text-center md:text-left">
+                <div class="font-headline-md text-headline-md text-on-surface mb-4">KHANDAKER SHAHRIAR SHAMIT</div>
+                <p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+                    © 2024 Khandaker Shahriar Shamit. Built for Engineering Excellence.
+                </p>
+            </div>
+            <div class="flex gap-8">
+                <a class="text-on-surface-variant hover:text-secondary transition-all font-label-code text-label-code opacity-80 hover:opacity-100"
+                    href="#">LinkedIn</a>
+                <a class="text-on-surface-variant hover:text-secondary transition-all font-label-code text-label-code opacity-80 hover:opacity-100"
+                    href="#">GitHub</a>
+                <a class="text-on-surface-variant hover:text-secondary transition-all font-label-code text-label-code opacity-80 hover:opacity-100"
+                    href="#">Upwork</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Smooth scroll implementation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-4');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-4');
+            observer.observe(section);
+        });
+    </script>
+</body>
+
+</html>
